@@ -10,7 +10,8 @@ async function start(){
     const responses = await inquirer.prompt(questions);
     const readme = generateReadme(responses);
 
-  
+    console.log("hello!!!")
+    
     writeFile("README.md", `${readme}`, (err) => {
       if( err ){
         console.error("There was an error writing the file.")
